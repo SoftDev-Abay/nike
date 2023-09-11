@@ -20,7 +20,8 @@ const PopularComponents = () => {
       >
         {products.map((product) => (
           <PopularProductCard key={product.name}
-           {...product} />
+           {...product}
+           />
         ))}
       </div>
     </section>

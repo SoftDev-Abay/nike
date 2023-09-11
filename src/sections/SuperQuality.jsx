@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../components/Button";
 import { shoe8 } from "../assets/images";
+import Reveal from "../Framer/Reveal";
 
 const SuperQuality = () => {
   return (
@@ -29,13 +30,15 @@ const SuperQuality = () => {
         </div>
       </div>
       <div className="flex-1 flex justify-center items-center">
-        <img
-          className="object-contain"
-          src={shoe8}
-          alt="shoe8"
-          width={570}
-          height={522}
-        />
+        <Reveal>
+          <img
+            className="object-contain"
+            src={shoe8}
+            alt="shoe8"
+            width={570}
+            height={522}
+          />
+        </Reveal>
       </div>
     </section>
   );
